@@ -63,18 +63,21 @@ body {
 }
 
 #site-header {
-	width: 1024px;
+	/*width: 1024px;*/
+	width: 100%;
 	margin: 0 auto;
 }
 
 #beans-logo {
-	margin-left: 450px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	margin-top: 2px;
 }
 
 nav#top-nav {
 	background-color: #160702;
-	margin-top: 19px ;
+	margin-top: 22px ;
 	height: 40px;
 	width: 100%;
 }
@@ -97,7 +100,8 @@ nav#top-nav ul li a {
 } 
 
 #content {
-	width: 1024px;
+	/*width: 1024px;*/
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -128,3 +132,22 @@ footer {
 	padding: 45px 0;
 	line-height: 23px;
 }
+
+
+/* Media Queries */
+
+@media (max-width: 760px) {
+	.post {
+		float: none;
+		margin: 4% auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 667px) {
+	nav#top-nav ul li a {
+		padding:10px 10px;
+	}
+}
+
+
